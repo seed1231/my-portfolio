@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商網站設計 - 作品詳情</title>
+    <meta name="description" content="現代化的電商平台界面設計，使用 React 和 GSAP 打造流暢的使用者體驗">
+    <meta name="keywords" content="電商網站,React,GSAP,網頁設計,前端開發">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="電商網站設計 - 作品詳情">
+    <meta property="og:description" content="現代化的電商平台界面設計">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/project-one.html">
+    <meta property="og:image" content="assets/images/project1.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/material-design.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar md-nav-bar" role="navigation" aria-label="主要導航">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="回到首頁">Portfolio</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="切換導航選單">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">關於我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Project Hero Section -->
+        <section class="project-hero">
+            <div class="container">
+                <a href="portfolio.html" class="back-link md-button-text">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12H4M4 12L10 6M4 12L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    返回作品集
+                </a>
+                <h1 class="project-title md-display-small">電商網站設計</h1>
+                <p class="project-subtitle md-headline-medium">現代化的電商平台界面設計</p>
+                <div class="project-meta">
+                    <span class="project-date md-body-medium">2024年完成</span>
+                    <span class="project-category md-body-medium">網頁開發</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Image Gallery -->
+        <section class="project-gallery">
+            <div class="container">
+                <div class="gallery-main">
+                    <img src="assets/images/project1.jpg" alt="電商網站主視覺" class="gallery-image md-card">
+                </div>
+                <div class="gallery-grid">
+                    <img src="assets/images/project1-1.jpg" alt="產品列表頁面" class="gallery-image md-card">
+                    <img src="assets/images/project1-2.jpg" alt="購物車介面" class="gallery-image md-card">
+                    <img src="assets/images/project1-3.jpg" alt="結帳流程" class="gallery-image md-card">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="project-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="details-content">
+                        <h2 class="md-headline-small">專案概述</h2>
+                        <p class="md-body-large">
+                            為新創電商公司設計的完整購物平台，專注於創造流暢的購物體驗和直觀的用戶介面。
+                            整個專案從用戶研究開始，經過多次迭代設計，最終打造出一個兼具美觀與功能性的電商平台。
+                        </p>
+                        <p class="md-body-large">
+                            設計重點包含產品展示頁面的視覺層次、購物車的即時更新機制、以及簡化的結帳流程。
+                            透過 GSAP 動畫庫創造細緻的互動效果，提升用戶的瀏覽體驗。
+                        </p>
+
+                        <h3 class="md-title-large">主要功能</h3>
+                        <ul class="feature-list">
+                            <li class="md-body-large">響應式產品展示系統</li>
+                            <li class="md-body-large">智能搜尋與篩選功能</li>
+                            <li class="md-body-large">即時購物車更新</li>
+                            <li class="md-body-large">一頁式結帳流程</li>
+                            <li class="md-body-large">會員系統整合</li>
+                            <li class="md-body-large">多種付款方式支援</li>
+                        </ul>
+
+                        <h3 class="md-title-large">設計挑戰</h3>
+                        <p class="md-body-large">
+                            最大的挑戰是在保持視覺吸引力的同時，確保網站的載入速度和性能表現。
+                            透過優化圖片載入、實施懶加載策略，以及精心設計的動畫時序，
+                            成功達到了美觀與性能的平衡。
+                        </p>
+                    </div>
+
+                    <div class="details-sidebar">
+                        <div class="info-card md-card">
+                            <h3 class="md-title-medium">專案資訊</h3>
+                            
+                            <div class="info-item">
+                                <span class="info-label md-label-large">客戶</span>
+                                <span class="info-value md-body-medium">新創電商公司</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label md-label-large">角色</span>
+                                <span class="info-value md-body-medium">前端開發 / UI 設計</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label md-label-large">時程</span>
+                                <span class="info-value md-body-medium">3 個月</span>
+                            </div>
+                            
+                            <div class="info-item">
+                                <span class="info-label md-label-large">技術棧</span>
+                                <div class="tech-tags">
+                                    <span class="tech-tag md-chip">React</span>
+                                    <span class="tech-tag md-chip">GSAP</span>
+                                    <span class="tech-tag md-chip">Tailwind CSS</span>
+                                    <span class="tech-tag md-chip">Redux</span>
+                                    <span class="tech-tag md-chip">Stripe API</span>
+                                </div>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="md-button-filled">
+                                    查看網站
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="md-button-outlined">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="project-results">
+            <div class="container">
+                <h2 class="md-headline-small">專案成果</h2>
+                <div class="results-grid">
+                    <div class="result-card md-card">
+                        <div class="result-number md-display-medium">40%</div>
+                        <div class="result-label md-title-medium">轉換率提升</div>
+                        <p class="result-description md-body-medium">相較於舊版網站</p>
+                    </div>
+                    <div class="result-card md-card">
+                        <div class="result-number md-display-medium">2.5s</div>
+                        <div class="result-label md-title-medium">頁面載入時間</div>
+                        <p class="result-description md-body-medium">優化後的性能表現</p>
+                    </div>
+                    <div class="result-card md-card">
+                        <div class="result-number md-display-medium">95%</div>
+                        <div class="result-label md-title-medium">用戶滿意度</div>
+                        <p class="result-description md-body-medium">根據用戶調查結果</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Other Projects -->
+        <section class="project-navigation">
+            <div class="container">
+                <div class="nav-grid">
+                    <a href="portfolio.html" class="nav-prev md-card">
+                        <span class="nav-label md-label-large">上一個專案</span>
+                        <span class="nav-title md-title-large">返回作品集</span>
+                    </a>
+                    <a href="project-two.html" class="nav-next md-card">
+                        <span class="nav-label md-label-large">下一個專案</span>
+                        <span class="nav-title md-title-large">企業形象網站</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 個人作品集. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">載入中...</p>
+        </div>
+    </div>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/project-detail.js"></script>
+</body>
+</html>

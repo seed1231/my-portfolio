@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 - 前端開發者</title>
+    <meta name="description" content="專業前端開發者作品集，展示 HTML、CSS、JavaScript、GSAP 項目和技能">
+    <meta name="keywords" content="前端開發,作品集,HTML,CSS,JavaScript,GSAP,網頁設計">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="個人作品集 - 前端開發者">
+    <meta property="og:description" content="專業前端開發者作品集，展示創新的網頁開發項目">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="個人作品集 - 前端開發者">
+    <meta name="twitter:description" content="專業前端開發者作品集">
+    <meta name="twitter:image" content="assets/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/material-design.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="主要導航">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="回到首頁">Portfolio</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="切換導航選單">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">關於我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <h1 id="hero-heading" class="hero-title">
+                    <span class="hero-greeting">嗨，我是</span>
+                    <span class="hero-name">你的名字</span>
+                </h1>
+                <p class="hero-subtitle">前端開發者 & 創意工作者</p>
+                <p class="hero-description">
+                    專注於創造美觀且功能強大的網頁體驗，擅長使用現代前端技術打造響應式網站
+                </p>
+                <div class="hero-cta">
+                    <a href="#featured-projects" class="md-button md-button-filled">查看作品</a>
+                </div>
+            </div>
+            <div class="hero-background" aria-hidden="true"></div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="featured-projects" class="featured-projects-section" aria-labelledby="featured-projects-heading">
+            <div class="container">
+                <h2 id="featured-projects-heading" class="section-title">精選作品</h2>
+                <div class="featured-projects">
+                    <!-- Project 1 -->
+                    <div class="featured-project">
+                        <div class="featured-project-content">
+                            <span class="featured-project-year">2024</span>
+                            <h3 class="featured-project-title">電商網站設計</h3>
+                            <p class="featured-project-subtitle">現代化的電商平台界面設計</p>
+                            <p class="featured-project-description">
+                                為新創電商平台打造的完整購物體驗，包含產品展示、購物車、結帳流程等功能。運用 React 和 GSAP 創造流暢的互動體驗，搭配 Tailwind CSS 實現響應式設計。
+                            </p>
+                            <a href="project-one.html" class="md-button md-button-outlined">查看專案</a>
+                        </div>
+                        <div class="featured-project-image">
+                            <img src="assets/images/project1.jpg" alt="電商網站設計" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="featured-project featured-project-reverse">
+                        <div class="featured-project-content">
+                            <span class="featured-project-year">2024</span>
+                            <h3 class="featured-project-title">企業形象網站</h3>
+                            <p class="featured-project-subtitle">專業的企業形象展示網站</p>
+                            <p class="featured-project-description">
+                                為國際企業打造的品牌形象網站，展現專業與創新。採用純 HTML、CSS、JavaScript 開發，搭配 GSAP 動畫庫，創造令人印象深刻的視覺效果。
+                            </p>
+                            <a href="project-two.html" class="md-button md-button-outlined">查看專案</a>
+                        </div>
+                        <div class="featured-project-image">
+                            <img src="assets/images/project2.jpg" alt="企業形象網站" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="featured-project">
+                        <div class="featured-project-content">
+                            <span class="featured-project-year">2023</span>
+                            <h3 class="featured-project-title">互動式資料視覺化</h3>
+                            <p class="featured-project-subtitle">數據分析儀表板設計</p>
+                            <p class="featured-project-description">
+                                結合 D3.js 和 Vue.js 打造的資料視覺化平台，讓複雜數據變得易於理解。透過 GSAP 加入細緻的動畫效果，提升使用者的互動體驗。
+                            </p>
+                            <a href="project-three.html" class="md-button md-button-outlined">查看專案</a>
+                        </div>
+                        <div class="featured-project-image">
+                            <img src="assets/images/project3.jpg" alt="互動式資料視覺化" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 個人作品集. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="關閉">×</button>
+            <h3 id="modal-title" class="modal-title"></h3>
+            <div class="modal-body">
+                <!-- Project details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">載入中...</p>
+        </div>
+    </div>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

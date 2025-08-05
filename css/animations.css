@@ -1,0 +1,431 @@
+/* ==========================================
+   Animation Styles - Portfolio Website
+   ========================================== */
+
+/* GSAP-ready Animation Classes */
+.fade-in {
+  opacity: 0;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.rotate-in {
+  opacity: 0;
+  transform: rotate(-10deg);
+}
+
+/* Stagger Animation Classes */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Hero Animations */
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+}
+
+.hero-subtitle,
+.hero-description,
+.hero-cta .btn {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.2em;
+  background-color: var(--primary-color);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Progress Bar Animations */
+.skill-progress {
+  position: relative;
+  height: 8px;
+  background-color: var(--neutral-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  width: 0;
+  transition: width 1.5s var(--ease-out);
+}
+
+.skill-progress-bar.animated {
+  width: var(--progress);
+}
+
+/* Counter Animation */
+.counter {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Portfolio Card Animations */
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: var(--shadow-md);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.portfolio-card-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.portfolio-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.portfolio-card:hover .portfolio-card-image img {
+  transform: scale(1.1);
+}
+
+.portfolio-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-in-out);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-6);
+}
+
+.portfolio-card:hover .portfolio-card-overlay {
+  opacity: 1;
+}
+
+.portfolio-card-overlay-content {
+  transform: translateY(20px);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.portfolio-card:hover .portfolio-card-overlay-content {
+  transform: translateY(0);
+}
+
+.portfolio-card-content {
+  padding: var(--space-6);
+}
+
+/* Parallax Layers */
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.parallax-layer-1 {
+  z-index: -1;
+}
+
+.parallax-layer-2 {
+  z-index: -2;
+}
+
+.parallax-layer-3 {
+  z-index: -3;
+}
+
+/* Floating Elements */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-delay-1 {
+  animation-delay: 1s;
+}
+
+.floating-delay-2 {
+  animation-delay: 2s;
+}
+
+.floating-delay-3 {
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Reveal Animations */
+.reveal-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-101%);
+}
+
+.reveal-text.revealed::after {
+  animation: revealText 0.8s var(--ease-out) forwards;
+}
+
+@keyframes revealText {
+  0% {
+    transform: translateX(-101%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+/* Magnetic Button Effect */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.3s var(--ease-out);
+}
+
+/* Ripple Effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Loading Skeleton */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--neutral-200);
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Pulse Animation */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+/* Glitch Effect */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 var(--error);
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 var(--primary-color);
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(10px, 9999px, 31px, 0); }
+  10% { clip: rect(70px, 9999px, 71px, 0); }
+  20% { clip: rect(29px, 9999px, 78px, 0); }
+  30% { clip: rect(2px, 9999px, 8px, 0); }
+  40% { clip: rect(85px, 9999px, 93px, 0); }
+  50% { clip: rect(15px, 9999px, 98px, 0); }
+  60% { clip: rect(40px, 9999px, 62px, 0); }
+  70% { clip: rect(50px, 9999px, 102px, 0); }
+  80% { clip: rect(11px, 9999px, 60px, 0); }
+  90% { clip: rect(24px, 9999px, 36px, 0); }
+  100% { clip: rect(61px, 9999px, 98px, 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip: rect(26px, 9999px, 33px, 0); }
+  10% { clip: rect(8px, 9999px, 83px, 0); }
+  20% { clip: rect(44px, 9999px, 57px, 0); }
+  30% { clip: rect(1px, 9999px, 27px, 0); }
+  40% { clip: rect(73px, 9999px, 94px, 0); }
+  50% { clip: rect(38px, 9999px, 108px, 0); }
+  60% { clip: rect(14px, 9999px, 75px, 0); }
+  70% { clip: rect(51px, 9999px, 70px, 0); }
+  80% { clip: rect(17px, 9999px, 68px, 0); }
+  90% { clip: rect(28px, 9999px, 48px, 0); }
+  100% { clip: rect(3px, 9999px, 42px, 0); }
+}
+
+/* Morphing Shape */
+.morph {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/* Text Animation Classes for GSAP */
+.split-text {
+  overflow: hidden;
+}
+
+.split-text .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Particle Effect Container */
+.particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  pointer-events: none;
+}

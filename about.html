@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我 - 前端開發者</title>
+    <meta name="description" content="了解我的背景、技能和專業經歷">
+    <meta name="keywords" content="關於我,前端開發者,技能,經歷">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="關於我 - 前端開發者">
+    <meta property="og:description" content="了解我的背景、技能和專業經歷">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/about.html">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/material-design.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="主要導航">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="回到首頁">Portfolio</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="切換導航選單">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">關於我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">關於我</h1>
+                <p class="page-subtitle">認識熱愛創造的前端開發者</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" alt="個人照片" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <h2>熱愛創造的前端開發者</h2>
+                        <p>我是一位充滿熱情的前端開發者，專注於創建美觀、高效且用戶友好的網頁應用。擁有扎實的 HTML、CSS 和 JavaScript 基礎，並精通現代前端框架和工具。</p>
+                        <p>我相信好的設計不僅要美觀，更要實用。在每個項目中，我都致力於平衡美學與功能性，確保最終產品既能吸引用戶，又能提供流暢的使用體驗。</p>
+                        <p>透過不斷學習新技術和探索創新解決方案，我努力保持在前端開發領域的競爭力。我享受將複雜的問題簡化，並創造出直觀、易用的界面。</p>
+                        <div class="about-tags">
+                            <span class="tag">創新思維</span>
+                            <span class="tag">問題解決</span>
+                            <span class="tag">持續學習</span>
+                            <span class="tag">團隊合作</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">技能專長</h2>
+                <div class="skills-grid">
+                    <!-- Skills will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section class="experience-section">
+            <div class="container">
+                <h2 class="section-title">經歷時間軸</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>前端開發工程師</h3>
+                            <span class="timeline-date">2023 - 現在</span>
+                            <p>負責公司產品的前端開發，包括響應式網頁設計、性能優化和用戶體驗改善。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>網頁設計師</h3>
+                            <span class="timeline-date">2021 - 2023</span>
+                            <p>設計和開發多個客戶網站，從概念設計到最終實現，確保符合客戶需求和現代設計標準。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>自由接案者</h3>
+                            <span class="timeline-date">2020 - 2021</span>
+                            <p>為各種客戶提供網頁設計和開發服務，累積豐富的項目經驗。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 個人作品集. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">載入中...</p>
+        </div>
+    </div>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>
